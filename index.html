@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -16,8 +17,79 @@
         </style>
 </head>
 <body>
-    <h1 class="text-3xl font-extrabold font-poppins text-indigo-600 p-5 px-25">      
+    <!-- Header Section -->
+    <header class="mx-auto">
+    <div class="flex flex-row">
+    <div class="basis-4/5">
+    <h1 class="text-2xl font-extrabold font-poppins text-indigo-600 p-5 px-15">      
         Taskia    
     </h1>
+    </div>
+    <div class="basis-1/5 p-5">
+    <button class="font-roboto text-xs text-indigo-600 px-5 py-2 rounded-full border-2 border-solid text-nowrap ">
+        Try free
+    </button>
+    </div>
+    </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="flex flex-row max-md:flex-col">
+        <div class="basis-3/6">
+        <h1 class="text-5xl font-extrabold font-poppins leading-15 px-15 pt-30 text-balance">Task management and lists tool </h1>
+        <br>
+        <p class="text-[10px] tracking-wide font-roboto px-15 text-balance text-gray-400">We believe that designing products and services in close partnership with our clients is the only way to have a real impact on their business. </p>
+            <form class="space-x-11 p-9 px-15">
+                <input type="email" id="email" aria-describedby="helper-text-explanation" class="w-bg-gray-50 border border-gray-300 text-gray-900 p-2.5 text-xs rounded-full focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:placeholder-gray-400 dark:border-gray-600" placeholder="name@company.com">             
+                <button class="max-lg:mt-3 font-roboto text-xs text-white bg-indigo-600 px-5 py-2 rounded-full border-2">Try it free</button>
+            </form>
+    
+    
+        </div>
+        <div class="basis-3/6 mr-20 mt-8 max-md:ml-20">
+           <img class="h-auto py-2" src="hero image.jpg" alt="decorative-image">
+        </div>
+    </section>
+    
+    <!-- Section 2: Heading-->
+     <section class="flex justify-center flex-col">
+        <h2 class="text-2xl text-center leading-10 font-extrabold font-poppins text-balance pt-28">Featured Services That We Provide</h2>
+        <br>
+        <br>
+        <div class="grid min-md:ml-20 grid-cols-3 max-sm:grid-cols-1 max-sm:justify-items-center content-center gap-4 ...">  
+        
+            <!-- Figure 1 -->   
+            
+            <div class="bg-indigo-600 max-w-2xs rounded-md">
+                <img class="pt-12" src="Image-3-copy.png" alt="coffee-decorative-image">
+                    <h2 class="text-xl pt-7 font-extrabold font-poppins text-white text-center text-balance">Keep tasks in one place </h2>
+                     <p class="text-[10px] text-center pt-5 font-roboto px-15 text-white">Save time, avoid losing work and information, delegate, and track tasks to stay on schedule </p>
+                    <br>
+            </div>
+
+            <!-- Figure 2 -->
+             <div class="bg-blue-100 max-w-2xs rounded-md">
+                <img class="pt-12" src="Image 2.png" alt="wallet-decorative-image">
+                    <h2 class="text-xl pt-7 font-extrabold font-poppins text-black text-center text-balance">Keep tasks in one place</h2>
+                    <p class="text-[10px] text-center pt-5 font-roboto px-15 text-black">Save time, avoid losing work and information, delegate, and track tasks to stay on schedule </p>
+                    <br>
+             </div>
+
+            <!-- Figure 3 -->
+
+
+            <div class="bg-amber-100 max-w-2xs rounded-md">
+                <img class="pt-12" src="Image-1-edit.png" alt="swiss-army-knife-decorative-image">
+                    <h2 class="text-xl pt-7 font-extrabold font-poppins text-black text-center text-balance">Keep tasks in one place</h2>
+                    <p class="text-[10px] text-center pt-5 font-roboto px-15 text-black">Save time, avoid losing work and information, delegate, and track tasks to stay on schedule </p>
+                    <br>
+            </div>  
+        </div>
+     </section>
+
+    <br>
+
+
+
 </body>
 </html>
